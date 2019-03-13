@@ -1,0 +1,17 @@
+[global]
+ioengine=libaio
+blocksize=<BLOCKSIZE>
+kb_base=1024
+size=100%
+direct=1
+ioscheduler=<IOSCHED>
+readwrite=write
+filename=<FILENAME>
+ramp_time=<RAMPTIME>
+runtime=<RUNTIME>
+time_based=1
+group_reporting=1
+
+[<FILENAME>_<IOSCHED>_write_<BLOCKSIZE>_<NUMJOBS>jobs_<IODEPTH>depth_<RUNTIME>sec]
+numjobs=<NUMJOBS>
+iodepth=<IODEPTH>

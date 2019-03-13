@@ -1,0 +1,17 @@
+[global]
+ioengine=libaio
+blocksize=32KB
+kb_base=1024
+size=100%
+direct=1
+ioscheduler=deadline
+readwrite=randrw
+filename=/dev/sdb
+ramp_time=10
+runtime=60
+time_based=1
+group_reporting=1
+
+[/dev/sdb_deadline_randrw_32KB_32jobs_32depth_60sec]
+numjobs=32
+iodepth=32
